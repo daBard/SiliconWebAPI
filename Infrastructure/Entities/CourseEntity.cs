@@ -25,9 +25,8 @@ public class CourseEntity
     [Column(TypeName = "smallmoney")]
     public decimal Price { get; set; }
 
-    [AllowNull]
     [Column(TypeName = "smallmoney")]
-    public decimal? DiscountPrice { get; set; }
+    public decimal DiscountPrice { get; set; } = -1;
 
     [Required]
     [Column(TypeName = "int")]
