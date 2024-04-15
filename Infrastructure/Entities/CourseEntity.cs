@@ -39,7 +39,7 @@ public class CourseEntity
 
     [Required]
     [Column(TypeName = "bigint")]
-    public decimal TotalLikes { get; set; } = 0;
+    public int TotalLikes { get; set; } = 0;
 
     [Required]
     [Column(TypeName = "bit")]
